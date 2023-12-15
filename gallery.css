@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.fullcontent {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7)), url('images/gradient-bg.jpg') center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    margin: 0;
+}
+
+.header-content {
+    position: fixed;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 1.1% 1.16%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 28px rgba(0,0,0,.1);
+}
+
+.header-content h1 {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(93deg, #0cad00 0%, #01a0d5 14%, #a271fe 30%, #ff00dd 49%, #ff0088 65%, #ff0000 82%, #ff6600 91%, #ffd500 100%);
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+    font-size: 24px !important;
+    text-shadow: #7c003c;
+    margin-left: 10px; 
+}
+
+.nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(0deg, #57002a 0%, #5c003f 1%, #2a003d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+nav a:hover {
+    color: hsl(36, 92%, 56%);
+}
+
+
+/* Contents */
+.greetings {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2d2b31;
+    text-align: center;
+    padding: 7% 0 0 0;
+    transition: transform 0.3s ease; 
+}
+
+.greetings:hover {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 7% 0 0 0;
+    background: linear-gradient(93deg, #ff00c8 0%, #ffd500 100%);
+    background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease; 
+    transform: scale(1.01); 
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2D4B70;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.content3 {
+    padding: 2% 8% 8% 8%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    box-shadow: 0 1px 28px rgba(98, 0, 77, 0.1);
+    border: 20px solid #fff;
+    padding-bottom: 100%;
+    transition: transform 0.2s ease; 
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); 
+}
+
+
+.gallery-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer */
+.footer {
+    background: #fff;
+    color: #2d2b31;
+    text-align: center;
+    padding-inline-start: 2.19%;
+    padding-inline-end: 1.27%;
+    padding-block: 3%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    display: inline-block;
+    background: linear-gradient(93deg, #11ff00 0%, #00bfff 14%, #a271fe 30%, #ff00dd 49%, #ff0088 65%, #ff0000 82%, #ff6600 91%, #ffd500 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 24px !important;
+    margin-right: 5px;
+    transition: color 0.5s ease;  
+}
+
+.footer:hover a{
+    color: hsl(36, 92%, 56%);
+}
+
+.instagram2,
+.facebook2,
+.gmail2 {
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.instagram2 img,
+.facebook2 img,
+.gmail2 img {
+    width: 30px;
+    height: auto;
+    border-radius: 25%;
+}
+
+.instagram2 a,
+.facebook2 a,
+.gmail2 a {
+    display: block;
+    text-decoration: none;
+}
+
+.instagram2:hover,
+.facebook2:hover,
+.gmail2:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding: 10px;
+        position: static;
+    }
+
+    .content1 {
+        max-width: 100%;
+        width: 80%;
+        margin: 5% 10%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .content2 {
+        max-width: 100%;
+        width: 80%;
+        margin: 5% 10% 5% 10%;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .heading {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2D4B70;
+        text-align: center;
+        padding: 9% 0 0;
+    }
+
+    .content3 {
+        padding: 2% 8%;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 7px;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        box-shadow: 0 1px 28px rgba(98, 0, 77, 0.1);
+        border: 20px solid #fff;
+        padding-bottom: 100%;
+    }
+
+    .gallery-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }    
+
+    
+    .footer {
+        padding: 10px;
+        position: static;
+    }
+
+}
+

@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.fullcontent {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4)), url('images/gradient-bg.jpg') center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+}
+
+.header-content {
+    position: fixed;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 1.1% 1.16%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 28px rgba(0, 0, 0, .1);
+}
+
+.header-content h1 {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(93deg, #0cad00 0%, #00bfff 14%, #a271fe 30%, #ff00dd 49%, #ff0088 65%, #ff0000 82%, #ff6600 91%, #ffd500 100%);
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+    font-size: 24px !important;
+    text-shadow: #7c003c;
+    margin-left: 10px;
+}
+
+.nav {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(0deg, #57002a 0%, #5c003f 1%, #2a003d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+nav a:hover {
+    color: hsl(36, 92%, 56%);
+}
+
+.greetings {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2d2b31;
+    text-align: center;
+    padding: 8% 0 0 0;
+}
+
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 0 10%;
+}
+
+.column {
+    flex-basis: 48%;
+    padding: 3% 3%;
+    background: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 1%;
+
+}
+
+.column2 {
+    flex-basis: 48%;
+    padding: 0;
+    background: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 1%;
+}
+
+
+.column h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2D4B70;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 16px;
+    color: #555;
+    line-height: 30px;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+.instagram,
+.facebook,
+.gmail {
+    margin: 0;
+}
+
+.instagram,
+.facebook,
+.gmail {
+    display: flex;
+    padding: 1% 1.5% 0 0;
+    align-items: center;
+}
+
+.instagram img,
+.facebook img,
+.gmail img {
+    width: 40px;
+    height: auto;
+    border-radius: 25%;
+    margin-right: 10px; 
+    transition: transform 0.3s ease-out; 
+}
+
+.instagram a,
+.facebook a,
+.gmail a {
+    display: block;
+    text-decoration: none; 
+}
+
+.instagram a:hover img,
+.facebook a:hover img,
+.gmail a:hover img {
+    transform: scale(1.2);
+}
+
+
+.contact-us-box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    border-radius: 1%;
+
+}
+
+.TEXTCONTACT {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2D4B70;
+}
+
+.name-text,
+.eadd,
+.message {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2d2b31;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.button {
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(93deg, #e28cd8 0%, #ffc67c 100%);
+    border-radius: 4px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.button a {
+    text-decoration: none;
+    color: #f3f7fd;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(93deg, #d789ce 0%, #f3a774 100%);
+    transform: scale(1.01);
+}
+
+.button:hover a {
+    color: aliceblue;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #fff;
+    color: #2d2b31;
+    text-align: center;
+    padding-inline-start: 2.19%;
+    padding-inline-end: 1.27%;
+    padding-block: 3%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    display: inline-block;
+    background: linear-gradient(93deg, #11ff00 0%, #00bfff 14%, #a271fe 30%, #ff00dd 49%, #ff0088 65%, #ff0000 82%, #ff6600 91%, #ffd500 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 24px !important;
+    margin-right: 5px;
+    transition: color 0.5s ease;
+}
+
+.footer:hover a {
+    color: hsl(36, 92%, 56%);
+}
+
+.instagram2,
+.facebook2,
+.gmail2 {
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.instagram2 img,
+.facebook2 img,
+.gmail2 img {
+    width: 30px;
+    height: auto;
+    border-radius: 25%;
+}
+
+.instagram2 a,
+.facebook2 a,
+.gmail2 a {
+    display: block;
+    text-decoration: none;
+}
+
+.instagram2:hover,
+.facebook2:hover,
+.gmail2:hover {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding: 10px;
+        position: static;
+    }
+
+    .columns {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 2%; 
+    }
+
+    .column {
+        flex-basis: 15%; 
+        padding: 5% 5%;
+        margin: 5%;
+    }
+
+    .column2 {
+        flex-basis: 100%; 
+        padding: 3% 3%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .socials-container {
+        margin: 10px 0 0 0; 
+    }
+    
+    .greetings {
+        font-size: 28px; 
+        padding: 5% 0 0 0; 
+    }
+
+    .contact-us-box {
+        padding: 0; 
+    }
+
+    .name-text,
+    .eadd,
+    .message {
+        margin-bottom: 8px; 
+    }
+
+    input[type="text"] {
+        margin-bottom: 8px; 
+    }
+
+    .button {
+        padding: 10px 15px; 
+    }
+
+    .footer {
+        padding: 10px;
+        position: static;
+    }
+}
+
